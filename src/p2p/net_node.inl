@@ -389,8 +389,12 @@ namespace nodetool
       full_addrs.insert("127.0.0.1:21180"); // Add VPS when ready
 =======
       // full_addrs.insert("212.83.172.165:28080");
+<<<<<<< HEAD
       full_addrs.insert("127.0.0.1:21380"); // Add VPS when ready
 >>>>>>> Changes to support new private testnet
+=======
+      full_addrs.insert("127.0.0.1:21180"); // Add VPS when ready
+>>>>>>> New GENESIS_TX, Port Changes, Prefix Changes
     }
     else
     {
@@ -403,10 +407,14 @@ namespace nodetool
       // full_addrs.insert("195.154.123.123:28080");
       // full_addrs.insert("212.83.172.165:28080");
 <<<<<<< HEAD
+<<<<<<< HEAD
       full_addrs.insert("127.0.0.1:11180"); // Add VPS when ready
 =======
       full_addrs.insert("127.0.0.1:21380"); // Add VPS when ready
 >>>>>>> Changes to support new private testnet
+=======
+      full_addrs.insert("127.0.0.1:11180"); // Add VPS when ready
+>>>>>>> New GENESIS_TX, Port Changes, Prefix Changes
     }
     return full_addrs;
   }
