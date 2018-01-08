@@ -378,6 +378,7 @@ namespace nodetool
       // full_addrs.insert("163.172.182.165:28080");
       // full_addrs.insert("195.154.123.123:28080");
 <<<<<<< HEAD
+<<<<<<< HEAD
       
       //@devopsralf's server
       // full_addrs.insert("52.191.198.51:21180"); 
@@ -393,6 +394,9 @@ namespace nodetool
       full_addrs.insert("127.0.0.1:21380"); // Add VPS when ready
 >>>>>>> Changes to support new private testnet
 =======
+=======
+      full_addrs.insert("52.191.198.51:21180"); //@devopsralf's server
+>>>>>>> Added Testnet VPS node
       full_addrs.insert("127.0.0.1:21180"); // Add VPS when ready
 >>>>>>> New GENESIS_TX, Port Changes, Prefix Changes
     }
