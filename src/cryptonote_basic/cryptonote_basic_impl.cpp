@@ -128,6 +128,11 @@ namespace cryptonote {
     int speed = get_emission_speed(version, height, testnet);
     uint64_t base_reward = get_base_reward(version, already_generated_coins, speed);
     uint64_t full_reward_zone = get_min_block_size(version);
+    if(height == 1 && testnet) {
+        /* This will speed things up to catch up to AEON */
+        uint64_t current_aeon_coins = static_cast<uint64_t>(15372295795843000000);
+        base_reward = (current_aeon_coins - already_generated_coins);
+    }
     if(testnet){
       LOG_PRINT_L0("Reward generated. base=" << print_money(base_reward) << "(Money Supply: "  << print_money(MONEY_SUPPLY) << " Minus Already Generated Coins: " << print_money(already_generated_coins)
       << "), values: money_supply=" << print_money(MONEY_SUPPLY) << ", already_generated_coins=" << print_money(already_generated_coins));
