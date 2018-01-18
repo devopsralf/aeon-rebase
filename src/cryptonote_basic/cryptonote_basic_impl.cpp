@@ -126,7 +126,7 @@ namespace cryptonote {
     uint8_t version, uint64_t height, bool testnet) {
 
     int speed = get_emission_speed(version, height, testnet);
-    uint64_t refreshbase_reward = get_base_reward(version, already_generated_coins, speed);
+    uint64_t base_reward = get_base_reward(version, already_generated_coins, speed);
     uint64_t full_reward_zone = get_min_block_size(version);
     if(height == 1 && testnet) {
         /* This will speed things up to catch up to AEON */
