@@ -384,7 +384,7 @@ namespace nodetool
       
       //@drparadox' server
       // full_addrs.insert("45.32.165.18:21180");
-      //full_addrs.insert("n1.testnet.aeon.direct:21180");
+      full_addrs.insert("n1.testnet.aeon.direct:21180");
       full_addrs.insert("127.0.0.1:21180"); // Add VPS when ready
     }
     else
