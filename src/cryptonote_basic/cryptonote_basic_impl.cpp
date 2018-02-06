@@ -124,10 +124,10 @@ namespace cryptonote {
   bool get_block_reward(size_t median_size, size_t current_block_size, 
     uint64_t already_generated_coins, uint64_t &reward, 
     uint8_t version, uint64_t height, bool testnet) {
-
     int speed = get_emission_speed(version, height, testnet);
     uint64_t base_reward = get_base_reward(version, already_generated_coins, speed);
     uint64_t full_reward_zone = get_min_block_size(version);
+    LOG_PRINT_L0("Base: " << print_money(base_reward) << " Version: " << version << " Speed: " << speed << " Full Reward Zone: " << full_reward_zone);
     /* This will speed things up to catch up to AEON */
     if(height == 1 && testnet) {
         uint64_t current_aeon_coins = static_cast<uint64_t>(15372295795843000000U);
